@@ -1,0 +1,75 @@
+### api get all users
+get http://localhost:3000/users/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1vdWxpMDAxIiwiaWF0IjoxNjg4MjA1NjA1fQ.LB4dfpR0QcnHvO45uU-x-UqoPPD_KtWTohv8epkVqGE
+
+###api1 add user into db
+post http://localhost:3000/register/
+Content-Type: application/json
+
+{
+    "username": "mouli001",
+    "password": "mouli@123",
+    "name": "mouli",
+    "gender": "male"
+}
+
+###delete user
+
+DELETE http://localhost:3000/users/7/
+###
+
+### api2 login 
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username": "mouli001",
+    "password": "mouli@123"
+}
+
+###api3 get tweets of user accorging to whom he follows
+get http://localhost:3000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg4MjIzNjA1fQ.5hyliD3KOKAuTVySRKBHAZK-NSymlxYXgnMT2yuSO8E
+
+### api 4
+get http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg4MjIzNjA1fQ.5hyliD3KOKAuTVySRKBHAZK-NSymlxYXgnMT2yuSO8E
+
+###api5 get the people who follows user
+get http://localhost:3000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1vdWxpMDAxIiwiaWF0IjoxNjg4MjA1NjA1fQ.LB4dfpR0QcnHvO45uU-x-UqoPPD_KtWTohv8epkVqGE
+
+###api6
+get http://localhost:3000/tweets/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg4MjE3MjIxfQ.6KhccDd5PAUBR8Ds1GygKOeobzayruDYHZ3nhgs1uaw
+###api7 
+get http://localhost:3000/tweets/2/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg4MjE3MjIxfQ.6KhccDd5PAUBR8Ds1GygKOeobzayruDYHZ3nhgs1uaw
+
+###api8
+get http://localhost:3000/tweets/2/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg4MjE3MjIxfQ.6KhccDd5PAUBR8Ds1GygKOeobzayruDYHZ3nhgs1uaw
+
+
+###api9 get all tweets of user 
+get http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg4MjIzNjA1fQ.5hyliD3KOKAuTVySRKBHAZK-NSymlxYXgnMT2yuSO8E
+
+###
+get http://localhost:3000/user/2/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg4MjE3MjIxfQ.6KhccDd5PAUBR8Ds1GygKOeobzayruDYHZ3nhgs1uaw
+
+###api10 post tweet
+post http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg4MjE3MjIxfQ.6KhccDd5PAUBR8Ds1GygKOeobzayruDYHZ3nhgs1uaw
+Content-Type: application/json
+
+{
+    "tweet": "yehh its working.."
+}
+
+###api11
+DELETE http://localhost:3000/tweets/13/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1vdWxpMDAxIiwiaWF0IjoxNjg4MjI1NzQ5fQ.Ek-MoAW81Vdq7q6TnqkSy5yeXassSA9Vq9ONlMrrZ-M
+
+###
